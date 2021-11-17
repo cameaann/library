@@ -1,0 +1,34 @@
+.home-container{
+    margin:1.8rem 0;
+}
+
+.card-body{
+    display:flex;
+    align-items: center;
+    padding: 0;
+    background-image: linear-gradient(to right bottom,
+    rgba($warm-light-color, 0.6),
+    rgba($warm-medium-color, 0.6)),
+    url('../images/jamie-taylor--9C3TMXwQjQ-unsplash.jpg');
+    height:57.5rem;
+    background-size: cover;
+    border-top: 3px solid $blue-main-color;
+}
+
+
+.schedule-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 4rem;
+    font-size: 1.8rem;
+    margin-left: 31rem;
+}
+
+.section{
+    width:98.4rem;
+    margin: 5rem auto;
+}
+
