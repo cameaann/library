@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "Выставки и лонгриды",
+        "url": "images/small/exhibits.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Мероприятия месяца",
+        "url": "images/small/monthsEvents.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Мы в эфире",
+        "url": "images/small/radio.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Славные даты",
+        "url": "images/small/dates.jpg"
+    }
+]

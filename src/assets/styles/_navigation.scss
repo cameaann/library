@@ -1,32 +1,69 @@
+@import './variables';
+@import './mixins';
+
 .nav{
+    position: relative;
     display:flex;
-    width:65rem;
-    margin: 5rem auto 0 auto;
     justify-content: center;
     font-family: 'SansPro', 'sans serif';
     font-size: 2.4rem;
 
     &__item{
-        display: block;
         padding: 1rem 2rem;
-        border: 3px solid $blue-main-color;
-        border-top-left-radius: 3rem;
-        border-top-right-radius: 3rem;
-        border-bottom: none;
 
         &:hover{
-            background-color: $blue-medium-color;
             color: $blue-main-color;
         }
 
         &.active{
-            background-color: $blue-main-color;
-            color: #ffffff;
+            border-bottom: 2px solid $blue-main-color;
+
+            @include response(big-desktop){
+                border-bottom: 5px solid $blue-main-color;
+            }
         }
 
     }
 
     @include response(tab-land){
         font-size: 1.8rem;
+    }
+    @include response(tab-port){
+        font-size: 2rem;
+    }
+    @include response(phone){
+            display: none;
+        }
+
+    @include response(big-desktop){
+        font-size: 3.6rem;
+    }
+
+    &.responsive{
+
+        @include response(phone){
+            position: absolute;
+            display: flex;
+            width:100%;
+            flex-direction: column;
+            top:15rem;
+            background-color: #ffffff;
+            color: $blue-main-color;
+            font-size: 2.8rem;
+            -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.3);
+            -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.3);
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.3);
+            z-index: 100;
+
+            &>.nav__item{
+                padding: 1.7rem 2.5rem;
+
+            }
+
+            &:left{
+                display: none;
+            }
+        }
+
     }
 }

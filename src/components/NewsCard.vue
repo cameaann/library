@@ -1,10 +1,21 @@
 <template>
     <div class="news-card">
-        <p>Интерактив по Некрасову. Друзья, особенно педагоги и
-            родители! Наша библиотека предлагает на час
-            погрузиться в эпоху нашего юбиляра-земляка с точки
-            зрения крестьянских детей. </p>
+        <p v-if="item.content">{{ formatString(item.content) }} </p>
          <div class="button-text">читать подробнее</div>
     </div>
 
 </template>
+
+<script>
+export default ({
+props: ['item'],
+methods:{
+    formatString(val){
+        return val.split(" ").slice(0, 20).join(" ").concat("...");
+    }
+}
+
+
+})
+
+</script>

@@ -1,27 +1,90 @@
+@import './mixins';
+@import './variables';
+
 .header{
-    height:27rem;
+    // display: flex;
+    // flex-direction: column;
+    height:16vh;
     background-color: $bg-color;
     color: $font-color-dark;
-    padding-top: 3rem;
+    padding-top: 2rem;
+
+    @include response(tab-land){
+        // height:25vh;
+    }
+    @include response(tab-port){
+        height:20vh;
+
+    }
+    @include response(big-desktop){
+        height: 14vh;
+        padding-top: 3rem;
+    }
+
 }
 
 .header-container{
     display: flex;
-    width: 90rem;
+    flex-direction: row;
+    width: 90%;
     margin: 0 auto;
     align-items: center;
     justify-content: space-evenly;
+    align-items: center;
+
+    &>.menu_icon.menu_button{
+        display: none;
+
+        @include response(phone){
+            display: block;
+        }
+    }
+
+    @include response(tab-port){
+        flex-direction: column;
+    }
+
+    @include response(phone){
+        flex-direction: row;
+        width: 100%;
+    }
 }
+
+.header-brand{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include response(tab-port){
+        width: 60%;
+    }
+    @include response(phone){
+        width: 80%;
+    }
+}
+
 .logo{
     width:11.6rem;
     height:11.6rem;
     fill:$font-color-dark;
+
+    @include response(phone){
+        width:9.6rem;
+        height:9.6rem;
+    }
+
+    @include response(big-desktop){
+        width:15.6rem;
+        height:15.6rem;
+    }
 }
 
 .title-box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1;
 }
 
 .header-title{
@@ -30,19 +93,28 @@
     &-normal{
         font-size: 2.8rem;
 
-        @include response(tab-port){
+        @include response(phone){
             font-size: 2.4rem;
+        }
+
+        @include response(big-desktop){
+            font-size: 3.6rem;
         }
     }
     &-big{
-        font-size: 6.4rem;
+        font-size: 4.8rem;
         text-transform: uppercase;
         font-style: normal;
         font-weight: 700;
 
-        @include response(tab-port){
-            font-size: 4.8rem;
+        @include response(phone){
+            font-size: 3.2rem;
         }
+
+        @include response(big-desktop){
+            font-size: 6.4rem;
+        }
+
     }
 }
 

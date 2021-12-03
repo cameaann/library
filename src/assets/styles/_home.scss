@@ -1,5 +1,19 @@
+@import './mixins';
+@import './variables';
+
+
 .home-container{
     margin:1.8rem 0;
+
+    @include response(tab-land){
+        margin:3.8rem 0;
+    }
+
+    @include response(phone){
+        margin:.5rem 0;
+    }
+
+
 }
 
 .card-body{
@@ -10,9 +24,17 @@
     rgba($warm-light-color, 0.6),
     rgba($warm-medium-color, 0.6)),
     url('../images/jamie-taylor--9C3TMXwQjQ-unsplash.jpg');
-    height:57.5rem;
+    // height:57.5rem;
+    height:60vh;
     background-size: cover;
-    border-top: 3px solid $blue-main-color;
+    // border-top: 3px solid $blue-main-color;
+    z-index: 1000;
+
+    @include response(phone){
+        background-image: none;
+        height: 20vh;
+        margin-top: 3rem;
+    }
 }
 
 
@@ -23,12 +45,46 @@
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 4rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-left: 31rem;
+    height: auto;
+
+    @include response(tab-land){
+        margin-left: 15rem;
+        font-size: 1.4rem;
+    }
+
+    @include response(tab-port){
+        margin-left: 10rem;
+        // font-size: 1.8rem;
+    }
+
+    @include response(phone){
+        margin-left: 3rem;
+        display: none;
+    }
+
+    @include response(big-desktop){
+        font-size: 2.4rem;
+        margin-left: 50rem;
+    }
+
 }
 
-.section{
-    width:98.4rem;
-    margin: 5rem auto;
+.schedule-small-card{
+    display:none;
+
+    @include response(phone){
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        margin-left: 8rem;
+    }
+    @include response(phone-mini){
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
 }
+
+
 

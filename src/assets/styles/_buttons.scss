@@ -1,3 +1,6 @@
+@import './variables';
+@import './mixins';
+
 // BUTTONS
 
 .buttons{
@@ -24,9 +27,27 @@
 
     &__junior{
         margin-bottom: 8.7rem;
+
+        @include response(phone){
+            margin-bottom: 2rem;
+        }
     }
     // &__senior{
     // }
+
+    @include response(phone){
+        width: 16.5rem;
+        font-size: 1.8rem;
+        border-bottom-right-radius: 0rem;
+        border-top-right-radius: 0rem;
+        padding: 1rem 2rem;
+    }
+
+    @include response(big-desktop){
+        width:53rem;
+        font-size: 3.6rem;
+        padding: 2rem 4rem;
+    }
 }
 
 .button-container{
@@ -34,6 +55,10 @@
     width:90rem;
     margin: 5rem auto;
     justify-content: space-between;
+
+    @include response(phone){
+        flex-direction: column;
+    }
 }
 
 .button-white{
@@ -57,6 +82,29 @@
         transform: translateY(.5rem);
         transition: all .5s;
     }
+
+    &-one{
+        width: 30%;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    @include response(tab-port){
+        padding: 2rem 3rem;
+     }
+
+    @include response(phone){
+       font-size: 1.8rem;
+       margin-bottom: 2rem;
+       text-align: center;
+       border-bottom: 3px solid $blue-main-color;
+    }
+
+    @include response(big-desktop){
+        font-size: 3.6rem;
+    }
+
+
 }
 
 .button-text{
@@ -72,7 +120,7 @@
 }
 
 .news-button{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: $blue-main-color;
     text-transform: uppercase;
@@ -83,4 +131,9 @@
     &:hover{
         color:$font-color-dark;
     }
+
+    @include response(big-desktop){
+        font-size: 3.6rem;
+    }
 }
+

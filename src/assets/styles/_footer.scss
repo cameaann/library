@@ -1,0 +1,46 @@
+@import './mixins';
+
+.footer{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+    &__banners{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height:35rem;
+        padding: 1rem;
+        width:100%;
+        gap:0rem;
+
+
+        li{
+            text-decoration: none;
+            list-style: none;
+        }
+
+        @include response(tab-port){
+            height: 40rem;
+            justify-content: space-between;
+            gap:5rem;
+            width:65rem;
+        }
+
+        @include response(phone){
+            justify-content: space-around;
+            height: 50rem;
+            width:100%;
+            gap:0rem;
+        }
+
+
+    }
+
+    &__img{
+        width:15rem;
+        height: auto;
+        opacity:.5;
+    }
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "id": "1",
+        "name": "Родителям и педагогам",
+        "url": "images/small/mom&child.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Коллегам",
+
+        "url": "images/small/colleagues.jpg"
+    }
+]

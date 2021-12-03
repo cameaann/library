@@ -1,0 +1,63 @@
+@import './variables';
+@import './mixins';
+
+.section{
+    // width:98.4rem;
+    width:60%;
+    margin: 7rem auto;
+
+    &__about{
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        color: $font-color-dark;
+        margin-bottom: 5rem;
+    }
+
+    &__title{
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    &__link{
+        text-decoration: none;
+        color:$font-color-dark;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    &__content{
+        font-size: 2rem;
+
+        &-contacts{
+            list-style: none;
+            // font-size: 2rem;
+            padding: 0;
+            margin: 0;
+
+            span{
+                margin-right:2rem;
+                font-weight: 700;
+                color:$font-color-dark;
+            }
+        }
+    }
+
+
+    @include response(tab-land){
+        width:75%;
+    }
+    @include response(tab-port){
+        width:85%;
+    }
+
+    @include response(phone){
+        width:90%;    }
+
+    @include response(big-desktop){
+        margin: 15rem auto;
+    }
+
+}
+
+
+

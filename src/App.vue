@@ -1,19 +1,29 @@
 <template>
   <div>
-    <LibHeader/>
-    <router-view/>
+    <LibHeader />
+    <!-- <router-view v-slot=" { Component, route }">
+        <transition
+        :enter-active-class="route.meta.enterClass"
+        :leave-active-class="route.meta.leaveClass"
+          mode="out-in"
+        >
+          <component :is="Component" />
+    </transition> -->
+    <router-view />
+    <Footer />
+    <!-- </router-view> -->
   </div>
 </template>
 
 <script>
+import LibHeader from "@/components/LibHeader.vue";
+import Footer from "@/components/Footer.vue";
 
-import LibHeader from '@/components/LibHeader.vue'
-
-export default ({
-  name: 'App',
+export default {
+  name: "App",
   components: {
-    LibHeader
-  }
-})
-
+    LibHeader,
+    Footer
+  },
+};
 </script>
