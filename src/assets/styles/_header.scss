@@ -2,24 +2,24 @@
 @import './variables';
 
 .header{
-    height:16vh;
+    height:10vh;
     background-color: $bg-color;
     color: $font-color-dark;
     padding-top: 2rem;
 
     @include response(tab-land){
-        height:14vh;
+        height:7vh;
     }
     @include response(tab-port){
-        height:22vh;
+        height:12vh;
     }
 
     @include response(phone){
-        height:12vh;
+        height:10vh;
 
     }
     @include response(big-desktop){
-        height: 18vh;
+        height: 20vh;
         padding-top: 3rem;
     }
 
@@ -65,10 +65,16 @@
 
     @include response(tab-port){
         width: 75%;
+        justify-content: center;
     }
     @include response(phone){
         justify-content: flex-start;
         width: 80%;
+    }
+
+    @include response(big-desktop){
+        width: 50%;
+        justify-content: space-evenly;
     }
 }
 
@@ -94,6 +100,10 @@
     flex-direction: column;
     align-items: center;
     line-height: 1;
+
+    @include response(tab-port){
+        margin-left: 2rem;
+    }
 
     @include response(phone){
         margin-left: 2rem;
