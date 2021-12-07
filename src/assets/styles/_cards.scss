@@ -5,6 +5,7 @@
     margin:0;
 }
 
+
 .news-card{
     margin-top: 5rem;
     display:block;
@@ -18,6 +19,24 @@
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.3);
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.3);
 
+
+    &__showMore{
+        display:none;
+    }
+    &__formatted{
+        display: none;
+    }
+
+    &__formatted.show {
+        display: block;
+    }
+
+    &__showMore.show{
+        display: block;
+    }
+
+
+
     @include response(phone){
         font-size: 2.2rem;
         border-bottom: 3px solid $yellow-color;
@@ -28,6 +47,8 @@
         font-size: 3.6rem;
     }
 }
+
+
 
 .cards{
     display: flex;

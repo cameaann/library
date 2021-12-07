@@ -3,14 +3,34 @@
 .footer{
     background-color: #ffffff;
     display: flex;
+    flex-direction: column;
+
+    &__bottom{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem;
+        height:15rem;
+
+        @include response(phone){
+        flex-direction: column;
+
+        }
+    }
+}
+
+.projects{
+    display: flex;
     justify-content: center;
+    // flex-direction: column;
 
     &__banners{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        height:35rem;
+        height:20rem;
         padding: 1rem;
         width:100%;
         gap:0rem;
@@ -34,8 +54,6 @@
             width:100%;
             gap:0rem;
         }
-
-
     }
 
     &__img{
@@ -43,4 +61,23 @@
         height: auto;
         opacity:.5;
     }
+}
+
+.social-links{
+    width: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    .icon{
+        font-size:3rem;
+    }
+}
+
+.copyright{
+    font-size: 1.2rem;
+
+    @include response(phone){
+        text-align: center;
+    }
+
 }

@@ -30,6 +30,8 @@
     }
     @include response(tab-port){
         font-size: 2rem;
+        padding-top: 3rem;
+
     }
     @include response(phone){
             display: none;
@@ -40,6 +42,7 @@
     }
 
     &.responsive{
+        padding-top:0;
 
         @include response(phone){
             position: absolute;
@@ -55,7 +58,7 @@
             box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.3);
             z-index: 100;
 
-            &>.nav__item{
+            &>li{
                 padding: 1.7rem 2.5rem;
 
             }
