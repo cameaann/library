@@ -26,7 +26,11 @@
     cursor: pointer;
 
     &__junior{
-        margin-bottom: 8.7rem;
+        margin-bottom: 7rem;
+
+        @include response(tab-port){
+            margin-bottom: 4rem;
+        }
 
         @include response(phone){
             margin-bottom: 2rem;
@@ -34,6 +38,20 @@
     }
     // &__senior{
     // }
+
+    @include response(tab-land){
+        width: 28rem;
+        font-size: 2.2rem;
+        // padding: 1rem 2rem;
+
+    }
+
+    @include response(tab-port){
+        width: 23rem;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+
+    }
 
     @include response(phone){
         width: 16.5rem;
@@ -54,7 +72,7 @@
     display: flex;
     width:90rem;
     margin: 5rem auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     @include response(phone){
         flex-direction: column;
@@ -66,7 +84,7 @@
     font-style: 'SansPro';
     text-transform:uppercase;
     background-color: #ffffff;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: $font-color-dark;
     padding: 2rem 4rem;
@@ -89,8 +107,9 @@
         margin-top: 5rem;
     }
 
-    @include response(tab-port){
+    @include response(tab-land){
         padding: 2rem 3rem;
+        font-size: 1.6rem;
      }
 
     @include response(phone){
@@ -101,8 +120,8 @@
     }
 
     @include response(big-desktop){
-        font-size: 3.6rem;
-    }
+        font-size: 2.4rem;
+     }
 }
 
 .button-text{

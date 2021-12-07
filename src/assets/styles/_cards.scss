@@ -43,17 +43,21 @@
 
     }
 
-    @include response(big-desktop){
-        font-size: 3.6rem;
-    }
+    // @include response(big-desktop){
+    //     font-size: 3.6rem;
+    // }
 }
 
 
 
 .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+
+    // @include response(tab-port){
+    //     justify-content: space-evenly;
+    // }
 
     @include response(phone){
         flex-direction: column;
@@ -73,37 +77,45 @@
     cursor: pointer;
 
     &-info{
-        width:40rem;
-        height: 37rem;
+        width:33rem;
+        height: 32rem;
+
         border-bottom: 4px solid $blue-main-color;
         display: flex;
 
+        @include response(tab-land){
+            width:28rem;
+         }
+
         @include response(tab-port){
-           width:39rem;
+           width:30rem;
         }
 
         @include response(phone){
             border-bottom: 3px solid $blue-main-color;
          }
 
-        @include response(big-desktop){
-            width:60rem;
-            height: 57rem;
-        }
+        // @include response(big-desktop){
+        //     width:60rem;
+        //     height: 57rem;
+        // }
     }
 
     &-small{
-        width:25rem;
-        height: 40rem;
+        width:23rem;
+        height: 35rem;
         border-bottom: 4px solid $purple-color;
 
-        @include response(big-desktop){
-            width:38rem;
-            height: 65rem;
-        }
+
+        @include response(tab-land){
+            width:20rem;
+            height: 37rem;
+         }
 
         @include response(phone){
             border-bottom: 3px solid $purple-color;
+            width:25rem;
+            height: 40rem;
          }
     }
     &-event{
@@ -124,53 +136,53 @@
     border-top-right-radius: 1rem;
 
     &-big{
-        height: 26.8rem;
+        height: 21.8rem;
         margin-bottom: 2rem;
 
-        @include response(big-desktop){
-            height: 45rem;
-        }
+        // @include response(big-desktop){
+        //     height: 45rem;
+        // }
     }
 
     &__small{
         height:15.4rem;
         margin: 0;
 
-        @include response(big-desktop){
-            height: 27rem;
-        }
+        // @include response(big-desktop){
+        //     height: 27rem;
+        // }
     }
 
     &-event{
         height: 26.8rem;
 
-        @include response(big-desktop){
-            height: 35rem;
-        }
+        // @include response(big-desktop){
+        //     height: 35rem;
+        // }
     }
 }
 
 .card-content{
     display: flex;
-    padding:2rem;
+    padding:1rem 2rem;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
-    @include response(big-desktop){
-        font-size: 2.8rem;
+    @include response(phone){
+        font-size: 1.8rem;
     }
 
 }
 
 .card-title{
-    font-size: 2.4rem;
+    font-size: 2rem;
     color:$blue-main-color;
     font-weight: 700;
     text-align: center;
     padding: 1rem;
 
-    @include response(big-desktop){
-        font-size: 3.6rem;
-    }
+    // @include response(big-desktop){
+    //     font-size: 3.6rem;
+    // }
 }

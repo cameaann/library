@@ -25,10 +25,18 @@
     rgba($warm-medium-color, 0.6)),
     url('../images/jamie-taylor--9C3TMXwQjQ-unsplash.jpg');
     // height:57.5rem;
-    height:60vh;
+    height:65vh;
     background-size: cover;
     // border-top: 3px solid $blue-main-color;
     z-index: 1000;
+
+    // @include response(tab-land){
+    //     height: 50vh;
+    // }
+
+    @include response(tab-port){
+        height: 40vh;
+    }
 
     @include response(phone){
         background-image: none;
@@ -45,7 +53,7 @@
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 4rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-left: 31rem;
     height: auto;
 
@@ -55,8 +63,9 @@
     }
 
     @include response(tab-port){
-        margin-left: 10rem;
-        // font-size: 1.8rem;
+        margin-left: 15rem;
+        font-size: 1.2rem;
+        padding: 2rem;
     }
 
     @include response(phone){
@@ -65,8 +74,9 @@
     }
 
     @include response(big-desktop){
-        font-size: 2.4rem;
-        margin-left: 50rem;
+        // font-size: 2.4rem;
+
+        margin-left: 20rem;
     }
 
 }

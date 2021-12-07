@@ -44,10 +44,11 @@
 
 
     @include response(tab-land){
-        width:75%;
+        width:65%;
     }
+
     @include response(tab-port){
-        width:85%;
+        width:75%;
     }
 
     @include response(phone){
@@ -55,6 +56,7 @@
 
     @include response(big-desktop){
         margin: 15rem auto;
+        // width:75%;
     }
 
 }

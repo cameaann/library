@@ -6,9 +6,9 @@ h5{
     font-family: 'Philosopher', 'SansPro';
     margin-bottom: 3rem;
 
-    @include response(big-desktop){
-        font-size: 4.8rem;
-    }
+    // @include response(big-desktop){
+    //     font-size: 4.8rem;
+    // }
 }
 
 .title{
@@ -19,6 +19,6 @@ h5{
     font-weight: 700;
 
     @include response(big-desktop){
-        font-size: 4.8rem;
+        font-size: 3.6rem;
     }
 }
