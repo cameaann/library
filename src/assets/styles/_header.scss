@@ -2,8 +2,6 @@
 @import './variables';
 
 .header{
-    // display: flex;
-    // flex-direction: column;
     height:16vh;
     background-color: $bg-color;
     color: $font-color-dark;
@@ -40,6 +38,7 @@
 
         @include response(phone){
             display: block;
+            cursor: pointer;
         }
     }
 
@@ -77,6 +76,7 @@
     width:11.6rem;
     height:11.6rem;
     fill:$font-color-dark;
+    cursor: pointer;
 
     @include response(phone){
         width:9.6rem;
