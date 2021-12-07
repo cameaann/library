@@ -2,7 +2,9 @@
   <div class="header">
     <div class="header-container">
       <div class="header-brand">
-        <img src="../assets/images/logo.svg" alt="" class="logo" />
+        <router-link to="/">
+          <img src="../assets/images/logo.svg" alt="" class="logo" />
+        </router-link>
         <div class="title-box">
           <span class="header-title header-title-normal"
             >Областная детская</span
@@ -15,21 +17,27 @@
         <i class="icon-menu"></i>
       </div>
 
-        <ul class="nav"  @mouseleave="toggleMenu()"
-        :class="{ responsive: isResponsive }">
-          <li v-for="item in menu" v-bind:key="item.name" >
-            <a @click="navigate(item.route)" :class="{ active: isActive(item.route) }"
-            class="nav__item" >
-              {{ item.name }}
-            </a>
-          </li>
-        </ul>
+      <ul
+        class="nav"
+        @mouseleave="toggleMenu()"
+        :class="{ responsive: isResponsive }"
+      >
+        <li v-for="item in menu" v-bind:key="item.name">
+          <a
+            @click="navigate(item.route)"
+            :class="{ active: isActive(item.route) }"
+            class="nav__item"
+          >
+            {{ item.name }}
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
-import router from '@/router/index.js';
+import router from "@/router/index.js";
 
 export default {
   data() {
@@ -37,7 +45,11 @@ export default {
       currentRoute: router.currentRoute,
       isResponsive: false,
       menu: [
-        { name: "Главная", route: "/", active: "/" == router.currentRoute.path },
+        {
+          name: "Главная",
+          route: "/",
+          active: "/" == router.currentRoute.path,
+        },
         {
           name: "Контакты",
           route: "/contacts",
@@ -61,14 +73,14 @@ export default {
       router.push(route);
     },
     isActive(route) {
-      const bool = (route === this.currentRoute.path);
+      const bool = route === this.currentRoute.path;
       return bool;
     },
     toggleMenu() {
       this.isResponsive = !this.isResponsive;
     },
-  }
-}
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
