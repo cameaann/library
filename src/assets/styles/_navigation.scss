@@ -30,8 +30,7 @@
     }
     @include response(tab-port){
         font-size: 2rem;
-        padding-top: 3rem;
-
+        padding-top: 2rem;
     }
     @include response(phone){
             display: none;
@@ -42,7 +41,7 @@
     }
 
     &.responsive{
-        padding-top:0;
+        // padding-top:0;
 
         @include response(phone){
             position: absolute;

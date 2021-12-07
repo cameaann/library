@@ -2,16 +2,16 @@
 @import './variables';
 
 .header{
-    height:10vh;
+    height:14vh;
     background-color: $bg-color;
     color: $font-color-dark;
     padding-top: 2rem;
 
     @include response(tab-land){
-        height:7vh;
+        height:12vh;
     }
     @include response(tab-port){
-        height:12vh;
+        height:14vh;
     }
 
     @include response(phone){
