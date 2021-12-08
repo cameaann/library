@@ -24,24 +24,25 @@
     rgba($warm-light-color, 0.6),
     rgba($warm-medium-color, 0.6)),
     url('../images/jamie-taylor--9C3TMXwQjQ-unsplash.jpg');
-    // height:57.5rem;
-    height:65vh;
+    height:50rem;
     background-size: cover;
-    // border-top: 3px solid $blue-main-color;
     z-index: 1000;
 
-    // @include response(tab-land){
-    //     height: 50vh;
-    // }
+    @include response(tab-land){
+        height: 50rem;
+    }
 
     @include response(tab-port){
-        height: 40vh;
+        height: 35rem;
     }
 
     @include response(phone){
         background-image: none;
-        height: 20vh;
+        height: 20rem;
         margin-top: 3rem;
+    }
+    @include response(big-desktop){
+        height: 60rem;
     }
 }
 

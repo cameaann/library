@@ -2,21 +2,20 @@
 @import './variables';
 
 .header{
-    height:14vh;
+    height:14rem;
     background-color: $bg-color;
     color: $font-color-dark;
     padding-top: 2rem;
 
     @include response(tab-land){
-        height:12vh;
+        height:12rem;
     }
     @include response(tab-port){
-        height:14vh;
+        height:14rem;
     }
 
     @include response(phone){
-        height:10vh;
-
+        height:12rem;
     }
     @include response(big-desktop){
         height: 20vh;
