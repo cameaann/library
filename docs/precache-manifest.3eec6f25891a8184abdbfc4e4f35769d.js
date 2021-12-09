@@ -8,108 +8,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/library/css/chunk-vendors.5d3035bc.css"
   },
   {
-    "revision": "42ddea1a7f83ce99377a3e06b0fd7855",
-    "url": "/library/favicons/android-icon-144x144.png"
+    "revision": "f6c148993e178b65efe6e71adaecda55",
+    "url": "/library/favicons/android-chrome-192x192.png"
   },
   {
-    "revision": "8cbcd60c99848d495568fc9187f77a93",
-    "url": "/library/favicons/android-icon-192x192.png"
+    "revision": "b7b19fbcc09f524646f12c728bc2e8d5",
+    "url": "/library/favicons/android-chrome-512x512.png"
   },
   {
-    "revision": "666ba17121fc121eabf5770c446142e9",
-    "url": "/library/favicons/android-icon-36x36.png"
+    "revision": "5ec1ce4b02128fae7d12e0d9aafe24ae",
+    "url": "/library/favicons/apple-touch-icon.png"
   },
   {
-    "revision": "303d4f62e78561adc4e6ea1281c6a8f0",
-    "url": "/library/favicons/android-icon-48x48.png"
-  },
-  {
-    "revision": "b6f224e10aaae10bbcee87337918b4f5",
-    "url": "/library/favicons/android-icon-72x72.png"
-  },
-  {
-    "revision": "8d80fcd499265b4fb2b0a1d2f4526a42",
-    "url": "/library/favicons/android-icon-96x96.png"
-  },
-  {
-    "revision": "3184809685592fb3c2b48fc28bfc1dac",
-    "url": "/library/favicons/apple-icon-114x114.png"
-  },
-  {
-    "revision": "41b9b9507b431788e73dc702328169dc",
-    "url": "/library/favicons/apple-icon-120x120.png"
-  },
-  {
-    "revision": "42ddea1a7f83ce99377a3e06b0fd7855",
-    "url": "/library/favicons/apple-icon-144x144.png"
-  },
-  {
-    "revision": "d05dd194aded021a7654b507fbddfc45",
-    "url": "/library/favicons/apple-icon-152x152.png"
-  },
-  {
-    "revision": "f954279451d6b5ba58e31830df711747",
-    "url": "/library/favicons/apple-icon-180x180.png"
-  },
-  {
-    "revision": "5661ef5ac4c3866be34cccfa02e53e73",
-    "url": "/library/favicons/apple-icon-57x57.png"
-  },
-  {
-    "revision": "01cef73f9aa27ec1b57bb5cb061a7145",
-    "url": "/library/favicons/apple-icon-60x60.png"
-  },
-  {
-    "revision": "b6f224e10aaae10bbcee87337918b4f5",
-    "url": "/library/favicons/apple-icon-72x72.png"
-  },
-  {
-    "revision": "360281b8a2b21a2c123e88fba8c664a1",
-    "url": "/library/favicons/apple-icon-76x76.png"
-  },
-  {
-    "revision": "d512f04907386fa305d7944549277b2d",
-    "url": "/library/favicons/apple-icon-precomposed.png"
-  },
-  {
-    "revision": "d512f04907386fa305d7944549277b2d",
-    "url": "/library/favicons/apple-icon.png"
-  },
-  {
-    "revision": "653d077300a12f09a69caeea7a8947f8",
+    "revision": "e4e40b0c82d228add33b5bcfe276a859",
     "url": "/library/favicons/browserconfig.xml"
   },
   {
-    "revision": "dc7189c9f20f7be8759af58238b59c49",
+    "revision": "302d0ae4e42c43a9e593235aa9ee3aac",
     "url": "/library/favicons/favicon-16x16.png"
   },
   {
-    "revision": "c5cbcd4cf5dc815c5a95da3572d229ae",
+    "revision": "b0bb4f602a4b20825629df67794abb1b",
     "url": "/library/favicons/favicon-32x32.png"
   },
   {
-    "revision": "8d80fcd499265b4fb2b0a1d2f4526a42",
-    "url": "/library/favicons/favicon-96x96.png"
+    "revision": "0b75de01d1926145b65c35f19a4379d4",
+    "url": "/library/favicons/mstile-150x150.png"
   },
   {
-    "revision": "b58fcfa7628c9205cb11a1b2c3e8f99a",
-    "url": "/library/favicons/manifest.json"
+    "revision": "f11bfd4fb6327e24c4c0d9f65ebf7214",
+    "url": "/library/favicons/safari-pinned-tab.svg"
   },
   {
-    "revision": "42ddea1a7f83ce99377a3e06b0fd7855",
-    "url": "/library/favicons/ms-icon-144x144.png"
-  },
-  {
-    "revision": "33ca15c51d4523a2f743f9b62da30909",
-    "url": "/library/favicons/ms-icon-150x150.png"
-  },
-  {
-    "revision": "f5108effd4d9475e3648fa79be2bce65",
-    "url": "/library/favicons/ms-icon-310x310.png"
-  },
-  {
-    "revision": "e105160687c6654ab3e64dce8369f758",
-    "url": "/library/favicons/ms-icon-70x70.png"
+    "revision": "00b5be1b127cd182c382d6a33a5d3471",
+    "url": "/library/favicons/site.webmanifest"
   },
   {
     "revision": "11b88b8af7b05eb866dbcd0e80f611fb",
@@ -352,7 +284,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/library/img/radio.796a3c1f.jpg"
   },
   {
-    "revision": "51bff79b3592d48e82c2170b50f1480f",
+    "revision": "56bf350c64adc387fd53e25c4ebbd0e5",
     "url": "/library/index.html"
   },
   {
