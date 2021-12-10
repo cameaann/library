@@ -17,11 +17,7 @@
         <i class="icon-menu"></i>
       </div>
 
-      <ul
-        class="nav"
-        @mouseleave="toggleMenu()"
-        :class="{ responsive: isResponsive }"
-      >
+      <ul class="nav" :class="{ responsive: isResponsive }" id="myMenu"     >
         <li v-for="item in menu" v-bind:key="item.name">
           <a
             @click="navigate(item.route)"
@@ -68,9 +64,16 @@ export default {
       ],
     };
   },
+  created() {
+    window.addEventListener('click', this.close)
+  },
+  beforeDestroy() {
+    window.removeEventListener('click', this.close)
+  },
   methods: {
     navigate(route) {
       router.push(route);
+      this.toggleMenu();
     },
     isActive(route) {
       const bool = route === this.currentRoute.path;
@@ -79,6 +82,12 @@ export default {
     toggleMenu() {
       this.isResponsive = !this.isResponsive;
     },
+    close(e) {
+      // var menuNav = document.getElementById("myMenu");
+      if (!(this.$el == e.target || this.$el.contains(e.target))){
+        this.isResponsive = false
+      }
+    }
   },
 };
 </script>
