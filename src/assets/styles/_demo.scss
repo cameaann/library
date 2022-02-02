@@ -1,0 +1,22 @@
+@import './mixins';
+
+.demo{
+    background-color: rgb(75, 71, 71);
+    color: #ffffff;
+    padding: 2rem;
+    height: 2rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+
+
+    &__text{
+        align-self: center;
+        justify-self: center;
+    }
+
+    @include response(phone-large){
+        font-size: 1.6rem;
+    }
+
+}

@@ -3,8 +3,7 @@
     <div class="footer__bottom">
        <div class="copyright">
          <span >&copy; 2021
-           Государственное учреждение культуры Ярославской области<br>
-         «Областная детская библиотека имени И.А. Крылова», (6+)</span>
+           Анна Шестакова</span>
       </div>
       <div class="social-links">
         <a href="http://vk.com/krylovka_yar" class="icon">
@@ -27,47 +26,47 @@
     <div class="projects">
       <ul class="projects__banners">
         <li>
-          <a href="">
+          <a href="#">
             <img
               class="projects__img"
               src="../assets/images/banners/Children.jpg"
-              alt=""
+              alt="Детям"
             />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <img
               class="projects__img"
               src="../assets/images/banners/childrenSupport.jpg"
-              alt=""
+              alt="Фонд поддержки детей"
             />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <img
               class="projects__img"
               src="../assets/images/banners/FamilyPortal.png"
-              alt=""
+              alt="Семейный портал"
             />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <img
               class="projects__img"
               src="../assets/images/banners/friendEnvironment.jpg"
-              alt=""
+              alt="Доступная среда"
             />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <img
               class="projects__img"
               src="../assets/images/banners/presentBook.jpg"
-              alt=""
+              alt="Подари ребенку книгу"
             />
           </a>
         </li>
@@ -76,7 +75,7 @@
             <img
               class="projects__img"
               src="../assets/images/banners/mainBooks.jpg"
-              alt=""
+              alt="Во весь голос"
             />
           </a>
         </li>

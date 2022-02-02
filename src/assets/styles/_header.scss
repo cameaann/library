@@ -2,25 +2,25 @@
 @import './variables';
 
 .header{
-    height:14rem;
+    // height:14rem;
     background-color: $bg-color;
     color: $font-color-dark;
-    padding-top: 2rem;
+    padding: 3rem;
 
-    @include response(tab-land){
-        height:12rem;
-    }
-    @include response(tab-port){
-        height:14rem;
-    }
+    // @include response(tab-land){
+    //     height:12rem;
+    // }
+    // @include response(tab-port){
+    //     height:14rem;
+    // }
 
     @include response(phone){
-        height:12rem;
+        padding: 2rem;
     }
-    @include response(big-desktop){
-        height: 20vh;
-        padding-top: 3rem;
-    }
+    // @include response(big-desktop){
+    //     height: 20vh;
+    //     padding-top: 3rem;
+    // }
 
 }
 
@@ -51,6 +51,7 @@
     }
 
     @include response(phone){
+        justify-content: space-between;
         flex-direction: row;
         width: 100%;
     }
